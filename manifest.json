@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "StackOverflow Highlighter",
+  "version": "0.1",
+  "description": "Highlight stackoverflow question, accepted answer, important comments, remove ads etc.",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+          "storage"
+        ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+	  "css":[
+	  ],
+      "js": [
+        "jquery.min.js","soCleaner.js","content.js"
+      ]
+    }
+  ],
+  "page_action": {
+    "default_title": "StackOverflow Highlighter",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "commands": {
+    "_execute_page_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+9",
+        "mac": "MacCtrl+Shift+9"
+      },
+      "description": "Highlight stackoverflow question, accepted answer, important comments, remove ads etc."
+    }
+  }
+}

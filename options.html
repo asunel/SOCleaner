@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>StackOverflow Highlighter Options</title>
+</head>
+
+<body>
+    <table border="0" cellpadding="4" style="border-collapse:collapse;">
+		<tr>
+            <td ><b>Select All</b></td>
+            <td align="right"><input type="checkbox" id="chkSelectAll"></td>
+        </tr>
+		<tr>
+			 <td nowrap title="It will remove ads">Remove Ads</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkAds"></td>
+			<td nowrap>Remove Hot Question</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkHotQues"></td>
+
+        </tr>
+		<tr>
+            <td >Remove Hire Me</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkHireMe"></td>
+			<td nowrap>Remove Chat</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkChat"></td>
+        </tr>
+		<tr>
+            <td nowrap>Remove Question Status</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkQuesStatus"></td>
+			<td nowrap>Remove Question Stats</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkQuesStats"></td>
+        </tr>
+		<tr>
+            <td nowrap>Remove Footer</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkFooter"></td>
+			<td nowrap>Remove Authors</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkAuthors"></td>
+        </tr>
+		<tr>
+            <td nowrap>Remove Top Bar</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkTopBar"></td>
+			<td nowrap>Remove Post Editor</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkPostEditor"></td>
+        </tr>
+		<tr>
+            <td nowrap>Remove Post Form</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkPostForm"></td>
+			<td nowrap>Remove Bottom Notice</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkBottomNotice"></td>
+        </tr>
+		<tr>
+            <td nowrap>Remove Question Feed</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkQuestionFeed"></td>
+			<td nowrap>Expand all comments</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkExpandComments"></td>
+        </tr>
+		<tr>
+            <td nowrap>Highlight Question</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkHighlightQues"></td>
+			<td nowrap>Highlight Accepted Answer</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkHighlightAcceptedAns"></td>
+        </tr>
+		<tr>
+            <td nowrap>Highlight Comments</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkHighlightImpComments"></td>
+			<td nowrap>Remove Community Bulletin</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkCommunityBulletin"></td>
+        </tr>
+		<tr>
+            <td nowrap>Remove Newsletter Ad</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkNewsletterAd"></td>
+			<td nowrap>Remove Sidebar</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkSidebar"></td>
+        </tr>
+		<tr>
+            <td nowrap>Remove Ask Question</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkAskQuestion"></td>
+			<td nowrap>Remove Post Tags</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkPostTaglist"></td>
+        </tr>
+		<tr>
+            <td nowrap>Remove Related Posts</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkRelatedPosts"></td>
+			<td nowrap>Remove Negative Voted Answers</td>
+            <td align="right" style="width:1%"><input type="checkbox" id="chkNegativeVotedAns"></td>
+        </tr>
+    </table>
+	
+	<br />
+            <button id="restore">Restore default</button>
+            <button id="save">Save</button>
+	<br /><br />
+	<b><div id="status" style="color: green"></div></b>
+	<script src="soCleaner.js"></script>
+	<script src="jquery.min.js"></script>
+	<script src="options.js"></script>
+</body>
+</html>
